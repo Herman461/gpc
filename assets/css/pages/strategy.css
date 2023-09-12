@@ -1,0 +1,244 @@
+.strategy-interview {
+  padding: 60px 0;
+}
+
+.strategy-interview__title {
+  font-family: "AGAvalancheC";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  /* 45px */
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
+  background: linear-gradient(90deg, #B18C52 28.32%, #D3C36D 40.72%, #B18C52 49.66%, #A38044 59.49%, #D3C36D 67.24%, #B18C52 81.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 18px;
+  -webkit-text-fill-color: transparent;
+}
+
+.strategy-interview__image {
+  border-radius: 50%;
+  border: 2px solid #A57D24;
+}
+
+.strategy-interview__image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.strategy-interview__content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.strategy-interview__text {
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.strategy-interview__who {
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.strategy-video {
+  padding: 60px 0;
+}
+
+.strategy-video__title {
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
+  background: linear-gradient(90deg, #B18C52 28.32%, #D3C36D 40.72%, #B18C52 49.66%, #A38044 59.49%, #D3C36D 67.24%, #B18C52 81.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87.8%;
+  /* 25.462px */
+  text-transform: uppercase;
+}
+
+.strategy-video__item {
+  margin-bottom: 26px;
+}
+
+.list-strategy-video {
+  border-radius: 8px;
+  border: 3px solid #C4AF7E;
+  background: #EFECE2;
+  padding: 35px 40px;
+}
+
+.list-strategy-video__title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94.8%;
+  /* 20.856px */
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.list-strategy-video__items_bottom {
+  padding-left: 8px;
+}
+
+.list-strategy-video__item {
+  font-weight: 500;
+  line-height: 94.8%;
+}
+
+.list-strategy-video__subtitle {
+  font-weight: 500;
+  line-height: 94.8%;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480.98px) {
+  .strategy-interview__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .strategy-interview__image {
+    height: 180px;
+    width: 180px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 180px;
+    flex: 0 0 180px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .strategy-interview__title_top {
+    display: none;
+  }
+
+  .strategy-interview__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 186px;
+    flex: 0 0 186px;
+    height: 186px;
+  }
+
+  .strategy-interview__image {
+    margin-right: 50px;
+  }
+
+  .list-strategy-video__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -25px 40px -25px;
+  }
+
+  .list-strategy-video__column {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .strategy-interview {
+    padding: 50px 0 42px;
+  }
+
+  .strategy-interview__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .strategy-interview__title {
+    display: none;
+  }
+
+  .strategy-interview__title_top {
+    display: block;
+  }
+
+  .strategy-video {
+    padding: 20px 0 40px 0;
+  }
+
+  .strategy-video__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .strategy-video__item {
+    margin-bottom: 20px;
+  }
+
+  .list-strategy-video {
+    padding: 30px;
+  }
+
+  .list-strategy-video__row {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .strategy-interview {
+    padding: 30px 0 20px;
+  }
+
+  .strategy-interview__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .strategy-interview__image {
+    max-width: 160px;
+    margin: 0 auto;
+    width: 100%;
+    height: 160px;
+  }
+
+  .strategy-interview__image {
+    margin-bottom: 20px;
+  }
+
+  .strategy-interview__text {
+    margin-bottom: 10px;
+  }
+
+  .strategy-video {
+    padding: 15px 0 30px;
+  }
+
+  .strategy-video__title {
+    font-size: 18px;
+  }
+
+  .list-strategy-video {
+    padding: 20px 15px;
+  }
+
+  .list-strategy-video__title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 480.98px) and (max-width: 767.98px) {
+  .strategy-interview__body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .strategy-interview__image {
+    margin-right: 20px;
+  }
+}
