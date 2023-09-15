@@ -8,9 +8,9 @@
 
     <link rel="stylesheet" href="assets/css/style.css?_v=20230915105840">
 
-    <link rel="stylesheet" href="assets/css/pages/links.css?_v=20230915105840">
+    <link rel="stylesheet" href="assets/css/pages/profile.css?_v=20230915105840">
 
-    <title>Полезные ссылки</title>
+    <title>Профиль</title>
 </head>
 
 <body>
@@ -232,31 +232,117 @@
                 </div>
             </div>
 
-            <div class="base-links">
-                <div class="base-links__container container">
-                    <div class="base-links__title title">Полезные ссылки</div>
-                    <div class="base-links__items">
-                        <div class="base-links__item item-base-links">
-                            <div class="item-base-links__title">Telegram-канал клуба</div>
-                            <a href="" class="item-base-links__button button_blue">
-                                <span>ПЕРЕЙТИ В КАНАЛ КЛУБА</span>
+            <form action="#" class="profile">
+                <div class="profile__container container">
+                    <h1 class="profile__title title">Мой профиль</h1>
+                    <div class="profile__avatar avatar-profile">
+                        <div class="avatar-profile__body">
+                            <input type="file">
+                            <img src="assets/images/avatar-default.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="profile__subtitle">Редактировать профиль</div>
+                    <div class="profile__items">
+                        <div class="profile__item">
+                            <div class="profile__label">Ваше имя, фамилия</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Дата рождения</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Интересы</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Город</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Дети</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Email</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__item">
+                            <div class="profile__label">Телефон</div>
+                            <div class="profile__input input-wrapper">
+                                <input class="input" type="text">
+                            </div>
+                        </div>
+                        <div class="profile__phones"></div>
+                        <div class="profile__phone phone-profile">
+                            <div class="phone-profile__button">
+                                <svg>
+                                    <use xlink:href="assets/images/icons/icons.svg#plus"></use>
+                                </svg>
+                            </div>
+                            <div class="phone-profile__label">Добавить телефон</div>
+                        </div>
+                        <div class="profile__socials socials-profile">
+                            <div class="socials-profile__item">
+                                <div class="socials-profile__icon">
+                                    <img src="assets/images/icons/vk.png" alt="">
+                                </div>
+                                <div class="socials-profile__input input-wrapper">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <div class="socials-profile__item">
+                                <div class="socials-profile__icon">
+                                    <img src="assets/images/icons/instagram.svg" alt="">
+                                </div>
+                                <div class="socials-profile__input input-wrapper">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                            <div class="socials-profile__item">
+                                <div class="socials-profile__icon">
+                                    <img src="assets/images/icons/telegram.svg" alt="">
+                                </div>
+                                <div class="socials-profile__input input-wrapper">
+                                    <input class="input" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__submit">
+                        <button class="button button_blue">
+                            <span>СОХРАНИТЬ</span>
+                        </button>
+                    </div>
+                    <div class="profile__actions">
+                        <div class="profile__action action-profile">
+                            <div class="action-profile__label">выйти из аккаунта</div>
+                            <a href="" class="action-profile__button button">
+                                <span>ВЫЙТИ</span>
                             </a>
                         </div>
-                        <div class="base-links__item item-base-links">
-                            <div class="item-base-links__title">Telegram-бот клуба</div>
-                            <a href="" class="item-base-links__button button_blue">
-                                <span>ПЕРЕЙТИ В БОТ КЛУБА</span>
-                            </a>
-                        </div>
-                        <div class="base-links__item item-base-links">
-                            <div class="item-base-links__title">Наша служба поддержки</div>
-                            <a href="" class="item-base-links__button button_blue">
-                                <span>СЛУЖБА ПОДДЕРЖКИ</span>
-                            </a>
+                        <div class="profile__action action-profile">
+                            <div class="action-profile__label">Удаление аккаунта</div>
+                            <div class="action-profile__text">
+                                Хотите безвозвратно <a href="">удалить аккаунт</a>, свой прогресс и все личные данные?
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </main>
 
 

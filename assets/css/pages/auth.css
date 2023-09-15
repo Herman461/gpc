@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .auth {
   text-align: center;
   background: url("../../images/login-bg.jpg") center top/cover no-repeat;
@@ -83,6 +85,17 @@
   align-items: center;
 }
 
+.auth__input {
+  border: 2px solid transparent;
+  /*Обводка нужной толщины, но прозрачная*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B)), -webkit-gradient(linear, left bottom, left top, from(#EFECE2), to(#EFECE2));
+  background: linear-gradient(0deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%), linear-gradient(0deg, #EFECE2, #EFECE2);
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #fff;
+  box-shadow: inset 0px 0px 0px 100vw #fff;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+}
+
 .auth__button {
   margin-bottom: 20px;
 }
@@ -140,10 +153,6 @@
 
   .auth__button {
     max-width: 300px;
-  }
-
-  .auth__button::before {
-    background: url("../../images/button-bg-300.svg") 0 0/cover no-repeat;
   }
 }
 

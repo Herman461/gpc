@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230913015915">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230913015915">
+    <link rel="stylesheet" href="assets/css/plugins/pikaday.css?_v=20230915105840">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230915105840">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css?_v=20230915105840">
+    <link rel="stylesheet" href="assets/css/pages/home.css?_v=20230915105840">
+
     <title>Главная</title>
 </head>
 
 <body>
-
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -207,16 +209,475 @@
         </header>
 
         <main class="page">
+            <div class="banner">
+                <div class="banner__container container">
+                    <div class="banner__body">
+                        <div class="banner__logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="banner__title">GLOBAL
+                            <br>PLATINUM CLUB
+                        </div>
+                        <div class="banner__search search-header">
+                            <div class="search-header__input">
+                                <button type="button" class="search-header__button stroke">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#search"></use>
+                                    </svg>
+                                </button>
+                                <input placeholder="Поиск" type="text">
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+
+            <div class="page__welcome welcome-page">
+                <div class="welcome-page__container container">
+                    <div class="welcome-page__content">
+                        <h2 class="welcome-page__title title">Добро пожаловать
+                            <br>
+                            в Platinum
+                            <br>Global Club!
+                        </h2>
+                        <div class="welcome-page__subtitle">Это первая международная платформа для роста и развития, которая объединяет целеустремленных и активных женщин.</div>
+                        <div class="welcome-page__text">
+                            <p>Все программы клуба будут доступны для Вас здесь, в личном кабинете. Вы можете проходить открытые курсы в комфортном для себя темпе и в любом порядке.</p>
+                            <p>Важные анонсы и события Клуба будут размещаться
+                                <br>в календаре и канале Клуба в Telegram.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="welcome-page__calendar base-calendar">
+                        <div id="calendar-a"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__programs programs-page">
+                <div class="programs-page__container container">
+                    <div class="programs-page__body">
+                        <h2 class="programs-page__title title">ПРОГРАММЫ
+                            <br>ВЕРОНИКИ ХАЦКЕВИЧ
+                        </h2>
+                        <div class="programs-page__items page-cards">
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_big">
+                                        <img src="assets/images/programs/01.png" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Практики Круга
+                                            <br>Cакральной силы женщин
+                                        </h3>
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_big">
+                                        <img src="assets/images/programs/02.png" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Наставничество Вероники Хацкевич</h3>
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="programs-page__buttons">
+                        <a href="" class="programs-page__button button button_blue">
+                            <span>ПЕРЕЙТИ В КАНАЛ КЛУБА</span>
+                        </a>
+                        <a href="" class="programs-page__button button button_blue">
+                            <span>ПЕРЕЙТИ В БОТ КЛУБА</span>
+                        </a>
+                        <a href="" class="programs-page__button button button_blue">
+                            <span>СЛУЖБА ПОДДЕРЖКИ</span>
+                        </a>
+                        <a href="" class="programs-page__button button">
+                            <span>НАВИГАЦИЯ ПО ПЛАТФОРМЕ</span>
+                        </a>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="page__cards base-cards">
+                <div class="base-cards__container container">
+                    <div class="base-cards__body">
+                        <h2 class="base-cards__title title">СтРАТЕГИИ БИЗНЕСА
+                            <br>
+                            ОТ ПРЕДПРИНИМАТЕЛЕЙ
+                        </h2>
+                        <div class="base-cards__items page-cards">
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/strategy/01.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">ВСТРЕЧА
+                                            <br>
+                                            С АЛЕКСАНДРОМ СОРОКИНЫМ
+                                        </h3>
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+                                        <img src="assets/images/strategy/02.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">ВСТРЕЧА С МИХАИЛОМ ГОРЯИНОВЫМ </h3>
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="base-cards__more">
+                            <a href="" class="button button_blue">
+                                <span>ЗАГРУЗИТЬ ЕЩЕ</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-da=".base-page-news__container,1230.98,last" class="base-cards__news news-page">
+                        <div class="news-page__title title">НОВОСТИ</div>
+                        <div class="news-page__items">
+                            <a href="" class="news-page__item item-news-page">
+                                <div class="item-news-page__body">
+                                    <div class="item-news-page__icon">
+                                        <img src="assets/images/icons/diamond-circle.svg" alt="">
+                                    </div>
+                                    <h4 class="item-news-page__title">СЛЕТ КЛУБОВ!</h4>
+                                    <div class="item-news-page__content">
+                                        <div class="item-news-page__info">
+                                            <p>1 июля, 11:00, Москва</p>
+                                            <p>Оффлайн-встреча</p>
+                                        </div>
+                                        <div class="item-news-page__date">22.06.2023</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                            <a href="" class="news-page__item item-news-page">
+                                <div class="item-news-page__body">
+                                    <div class="item-news-page__icon">
+                                        <img src="assets/images/icons/diamond-circle.svg" alt="">
+                                    </div>
+                                    <h4 class="item-news-page__title">Гибкие навыки
+                                        <br>
+                                        как основа успеха
+                                    </h4>
+                                    <div class="item-news-page__content">
+                                        <div class="item-news-page__info">
+                                            <p>Прямой эфир</p>
+                                            <p>с Сергеем Черненко</p>
+                                        </div>
+                                        <div class="item-news-page__date">22.06.2023</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                            <a href="" class="news-page__item item-news-page">
+                                <div class="item-news-page__body">
+                                    <div class="item-news-page__icon">
+                                        <img src="assets/images/icons/diamond-circle.svg" alt="">
+                                    </div>
+                                    <h4 class="item-news-page__title">Эфир с экспертом клуба Сергеем Черненко</h4>
+                                    <div class="item-news-page__content">
+                                        <div class="item-news-page__info">
+                                            <p>27 июня в 18:00</p>
+                                        </div>
+                                        <div class="item-news-page__date">22.06.2023</div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="news-page__more">
+                            <a href="">Смотреть больше новостей</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__cards base-cards">
+                <div class="base-cards__container container">
+                    <div class="base-cards__body">
+                        <h2 class="base-cards__title title">ПРЯМЫЕ ЭФИРЫ
+                            <br>
+                            С ЭКСПЕРТАМИ КЛУБА
+                        </h2>
+                        <div class="base-cards__items page-cards">
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/strategy/03.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title item-page-cards__title_offset">ЕВРОПЕЙСКИЕ законы бизнеса</h3>
+                                        <p class="item-page-cards__text">Прямой эфир с Дмитрием Сендеровым</p>
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <div class="item-page-cards__body">
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+                                        <img src="assets/images/strategy/04.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title item-page-cards__title_offset">ГИБКИЕ НАВЫКИ
+                                            <br>
+                                            КАК ОСНОВА УСПЕХА
+                                        </h3>
+                                        <p class="item-page-cards__text">Прямой эфир с Сергеем Черненко</p>
+
+
+                                        <a href="" class="item-page-cards__button button button_blue">
+                                            <span>ПЕРЕЙТИ</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="base-cards__more">
+                            <a href="" class="button button_blue">
+                                <span>ЗАГРУЗИТЬ ЕЩЕ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page__cards base-cards base-cards_other">
+                <div class="base-cards__container container">
+                    <div class="base-cards__body">
+                        <h2 class="base-cards__title title">ВИДЕОЛЕКЦИИ
+                            <br>
+                            ОТ ПРИГЛАШЕННЫХ ЭКСПЕРТОВ
+                        </h2>
+                        <div class="base-cards__items page-cards">
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/01.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Еврейские законы больших денег</h3>
+                                        <div class="item-page-cards__author">Дмитрий Сендеров</div>
+
+                                        <p class="item-page-cards__text">Маркетолог. Профессор. Руководитель и совладелец одного из крупнейших в России рекламных агентств Strong</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/02.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Экспертные продажи</h3>
+                                        <div class="item-page-cards__author">Дмитрий Норка</div>
+
+                                        <p class="item-page-cards__text">Бизнес-тренер. Президент Национальной ассоциации профессионалов продаж. Директор Школы экспертных продаж</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/03.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title item-page-cards__title_s">КАК ВЛИЯТЬ НА ДРУГИХ ЛЮДЕЙ И ДОБИВАТЬСЯ ОТ НИХ ЖЕЛАЕМОГО: <span>в продажах, в управлении, в жизни</span>
+                                        </h3>
+                                        <div class="item-page-cards__author">Дмитрий Сендеров</div>
+
+                                        <p class="item-page-cards__text">Бизнес-тренер №1 по продажам
+                                            <br>
+                                            в России* Катализатор и системный архитектор развития бизнеса. Автор. Спикер. Консультант
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/04.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title item-page-cards__title_s">Как начать пиарить себя. <span>Личный бренд для частных специалистов, экспетов
+                                                <br>
+                                                и топ-менеджеров
+                                            </span>
+                                        </h3>
+                                        <div class="item-page-cards__author">Роман Масленников</div>
+
+                                        <p class="item-page-cards__text">Основатель направления и агентства «Взрывной PR». Автор 106 книг. Кандидат филосовских наук. В PR - больше 20 лет. С 2006г работает агентствот</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/05.jpg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Законы денег</h3>
+                                        <div class="item-page-cards__author">Андрей Михайлец</div>
+
+                                        <p class="item-page-cards__text">Финансовый консультант. Обладатель международного профессионального сертификата CFA. Тренер. Супервизор</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="page-cards__item item-page-cards">
+                                <a href="" class="item-page-cards__body">
+                                    <div class="item-page-cards__label">new</div>
+                                    <div class="item-page-cards__icon">
+                                        <img src="assets/images/icons/diamond-circle-blue.svg" alt="">
+                                    </div>
+                                    <div class="item-page-cards__image item-page-cards__image_small">
+
+                                        <img src="assets/images/collection/06.jpg" alt="">
+
+                                    </div>
+                                    <div class="item-page-cards__content">
+                                        <h3 class="item-page-cards__title">Ключи эффективного общения</h3>
+                                        <div class="item-page-cards__author">Инна Мирная</div>
+
+                                        <p class="item-page-cards__text">Семейный психолог. Сексолог. Преподаватель. Супервизор.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="base-cards__more">
+                            <a href="" class="button button_blue">
+                                <span>ЗАГРУЗИТЬ ЕЩЕ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page__schedule schedule-page">
+                <div class="schedule-page__container container">
+                    <div class="schedule-page__body">
+                        <h2 class="schedule-page__title title">РАСПИСАНИЕ
+                            БЛИЖАЙШИХ МЕРОПРИЯТИЙ</h2>
+                        <div class="schedule-page__calendar base-calendar">
+                            <div id="calendar-b"></div>
+                        </div>
+                        <div class="schedule-page__label">блиЖАЙШИЕ СОБЫТИЯ:</div>
+                        <ul class="schedule-page__events">
+                            <li style="color: #174083;" class="schedule-page__event">5 июня, 12:00 - Наставничество ВХ</li>
+                            <li style="color: #63320F;" class="schedule-page__event">10 июня, 12:00 - Сакральная Сила ВХ</li>
+                            <li style="color: #A57D24;" class="schedule-page__event">15 июня, 12:00 - Открытие новых курсов</li>
+                            <li style="color: #0A5043;" class="schedule-page__event">21 июня, 12:00 - Эфиры с экспертами</li>
+                            <li style="color: #8A0B57;" class="schedule-page__event">31 июня, 12:00 - Оффлайн-встречи</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="page__news base-page-news">
+                <div class="base-page-news__container container">
+
+                </div>
+            </div>
         </main>
-        <footer class="footer">
-            <div class="footer__container container"></div>
-        </footer>
+
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js?_v=20230915105840"></script>
+    <script>
+    const calA = new Calendar({
+        id: "#calendar-a",
+        theme: "basic",
+        primaryColor: "#1E1E1E",
+        weekdayType: "short",
+        disableDayClick: true,
+        customWeekdayValues: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+        startWeekday: '1',
 
-    <script src="assets/js/script.js?_v=20230913015915"></script>
-    <script src="assets/js/app.js?_v=20230913015915"></script>
+    });
+
+    const calB =  new Calendar({
+        id: "#calendar-b",
+        theme: "basic",
+        primaryColor: "#1E1E1E",
+        weekdayType: "short",
+        disableDayClick: true,
+        customWeekdayValues: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+        startWeekday: '1',
+
+    });
+
+
+
+    // const days = document.querySelectorAll('.calendar__day')
+    //
+    // if (days.length > 0) {
+    //     let deleteDayOther = false
+    //     for (let index = 0; index < days.length; index++) {
+    //         const day = days[index]
+    //
+    //         if (day.classList.contains('calendar__day-active') && !deleteDayOther) {
+    //             deleteDayOther = true
+    //         }
+    //
+    //         if (deleteDayOther && day.classList.contains('calendar__day-other')) {
+    //             day.remove()
+    //         }
+    //     }
+    // }
+</script>
+    <script src="assets/js/script.js?_v=20230915105840"></script>
+    <script src="assets/js/app.js?_v=20230915105840"></script>
 </body>
 
 </html>
