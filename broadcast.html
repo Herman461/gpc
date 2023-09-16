@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230916113908">
     <link rel="stylesheet" href="assets/css/style.css?_v=20230916113908">
 
-    <link rel="stylesheet" href="assets/css/pages/profile.css?_v=20230916113908">
+    <link rel="stylesheet" href="assets/css/pages/broadcast.css?_v=20230916113908">
 
-    <title>Профиль</title>
+    <title>Трансляции</title>
 </head>
 
 <body>
@@ -258,121 +258,37 @@
                 </div>
             </div>
 
-            <form action="#" class="profile">
-                <div class="profile__container container">
-                    <h1 class="profile__title title">Мой профиль</h1>
-                    <div class="profile__avatar avatar-profile">
-                        <div class="avatar-profile__body">
-                            <input type="file">
-                            <img src="assets/images/avatar-default.png" alt="">
+            <div class="broadcast">
+                <div class="broadcast__container container">
+                    <div class="broadcast__title title">Трансляции</div>
+                    <div class="broadcast__body">
+                        <div class="broadcast__content">
+                            <div class="broadcast__video base-video">
+                                <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
+                                    <source src="assets/videos/video1.mp4" type="video/mp4" />
+                                    <p class="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                    </p>
+                                </video>
+                            </div>
+                            <div class="broadcast__block"></div>
                         </div>
+                        <div class="broadcast__label">ЧАТ</div>
+                        <div class="broadcast__chat">
 
-                    </div>
-                    <div class="profile__subtitle">Редактировать профиль</div>
-                    <div class="profile__items">
-                        <div class="profile__item">
-                            <div class="profile__label">Ваше имя, фамилия</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Дата рождения</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Интересы</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Город</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Дети</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Email</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__item">
-                            <div class="profile__label">Телефон</div>
-                            <div class="profile__input input-wrapper">
-                                <input class="input" type="text">
-                            </div>
-                        </div>
-                        <div class="profile__phones"></div>
-                        <div class="profile__phone phone-profile">
-                            <div class="phone-profile__button">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#plus"></use>
-                                </svg>
-                            </div>
-                            <div class="phone-profile__label">Добавить телефон</div>
-                        </div>
-                        <div class="profile__socials socials-profile">
-                            <div class="socials-profile__item">
-                                <div class="socials-profile__icon">
-                                    <img src="assets/images/icons/vk.png" alt="">
-                                </div>
-                                <div class="socials-profile__input input-wrapper">
-                                    <input class="input" type="text">
-                                </div>
-                            </div>
-                            <div class="socials-profile__item">
-                                <div class="socials-profile__icon">
-                                    <img src="assets/images/icons/instagram.svg" alt="">
-                                </div>
-                                <div class="socials-profile__input input-wrapper">
-                                    <input class="input" type="text">
-                                </div>
-                            </div>
-                            <div class="socials-profile__item">
-                                <div class="socials-profile__icon">
-                                    <img src="assets/images/icons/telegram.svg" alt="">
-                                </div>
-                                <div class="socials-profile__input input-wrapper">
-                                    <input class="input" type="text">
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="profile__submit">
-                        <button class="button button_blue">
-                            <span>СОХРАНИТЬ</span>
-                        </button>
-                    </div>
-                    <div class="profile__actions">
-                        <div class="profile__action action-profile">
-                            <div class="action-profile__label">выйти из аккаунта</div>
-                            <a href="" class="action-profile__button button">
-                                <span>ВЫЙТИ</span>
-                            </a>
-                        </div>
-                        <div class="profile__action action-profile">
-                            <div class="action-profile__label">Удаление аккаунта</div>
-                            <div class="action-profile__text">
-                                Хотите безвозвратно <a href="">удалить аккаунт</a>, свой прогресс и все личные данные?
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-            </form>
+
+            </div>
         </main>
 
 
     </div>
+    <script src="assets/js/plugins/video.min.js?_v=20230916113908"></script>
     <script src="assets/js/script.js?_v=20230916113908"></script>
     <script src="assets/js/app.js?_v=20230916113908"></script>
 </body>

@@ -237,7 +237,6 @@ img {
   position: relative;
 }
 
-.page,
 .header,
 .footer {
   position: relative;
@@ -271,6 +270,10 @@ img {
 .stroke {
   fill: none !important;
   color: #B69356;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 .page__body {
@@ -758,6 +761,27 @@ img {
   margin-left: -1px !important;
 }
 
+*::-moz-selection {
+  color: #fff;
+  background: #C7AA6D;
+}
+
+*::selection {
+  color: #fff;
+  background: #C7AA6D;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner__more {
+  z-index: 4;
+  top: 8px;
+  right: 0;
+  position: absolute;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -840,6 +864,7 @@ img {
 }
 
 .header__burger {
+  pointer-events: auto;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 53px;
   flex: 0 0 53px;
@@ -851,6 +876,7 @@ img {
 }
 
 .header {
+  pointer-events: none;
   z-index: 999;
 }
 
@@ -963,6 +989,7 @@ img {
 }
 
 .search-header {
+  pointer-events: auto;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 270px;
   flex: 0 0 270px;
@@ -1098,6 +1125,74 @@ img {
 
   .banner__search {
     display: none;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .banner__more {
+    display: none;
+  }
+
+  .menu-banner {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background: #F2F2EE;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    padding: 20px;
+  }
+
+  .menu-banner.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-banner__button {
+    max-width: 260px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .menu-banner__button:last-child {
+    margin: 0;
+  }
+
+  .menu-banner__close {
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    right: 15px;
+  }
+
+  .menu-banner__close img {
+    width: 28px;
+    height: 28px;
   }
 }
 
