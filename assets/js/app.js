@@ -254,4 +254,40 @@ window.addEventListener('DOMContentLoaded', function() {
 
     }
 
+    if (document.querySelector('.base-side__items')) {
+        const baseSideItems = new Swiper('.base-side__items', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            loop: true,
+            speed: 1000,
+
+
+
+            breakpoints: {
+                635.98: {
+                    slidesPerView: 2,
+                },
+
+            },
+
+            navigation: {
+                nextEl: '.base-side__button-next',
+                prevEl: '.base-side__button-prev'
+            },
+
+        })
+
+    }
+
+
+
+    if (document.querySelector('.news')) {
+        const newsMasonry = new Masonry( document.querySelector('.news__items'), {
+            // options
+            itemSelector: '.item-news',
+            percentPosition: true,
+
+        });
+    }
+
 })
