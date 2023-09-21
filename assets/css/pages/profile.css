@@ -65,11 +65,21 @@
   margin: 0;
 }
 
+.profile__phone {
+  margin-top: 15px;
+}
+
+.profile__phone .phone-profile__label {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .profile__label {
   margin-bottom: 10px;
 }
 
 .profile__phone {
+  cursor: pointer;
   margin-bottom: 22px;
 }
 
@@ -285,8 +295,8 @@
   .socials-profile__icon img {
     width: 25px;
     height: 25px;
-    -o-object-fit: containw;
-    object-fit: containw;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 
   .action-profile__label {
@@ -353,11 +363,15 @@
 }
 
 @media (any-hover: hover) {
-  .phone-profile__button:hover {
+  .profile__phone:hover .phone-profile__label {
+    color: #C7AA6D;
+  }
+
+  .profile__phone:hover .phone-profile__button {
     background: #BFA465;
   }
 
-  .phone-profile__button:hover svg {
+  .profile__phone:hover .phone-profile__button svg {
     color: #F2F2EE;
   }
 

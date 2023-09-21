@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.theory {
+  padding: 60px 0;
+}
+
+.theory__title {
+  margin-bottom: 40px;
+}
+
+.theory__search {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theory__items {
+  margin-bottom: 30px;
+}
+
+.theory__item {
+  margin-bottom: 23px;
+}
+
+.theory__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.search-theory__title {
+  text-align: center;
+  color: #06142B;
+  font-family: "AGAvalancheC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94.8%;
+  /* 17.064px */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.search-theory__input {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.search-theory__input input {
+  height: 40px;
+  padding-left: 48px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B));
+  background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%);
+  border: 1px solid transparent;
+  /*Обводка нужной толщины, но прозрачная*/
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+}
+
+.search-theory__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.search-theory__icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+.item-theory__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-theory__icon {
+  margin-right: 11px;
+}
+
+.item-theory__icon img {
+  width: 42px;
+  height: 57px;
+}
+
+.item-theory__title {
+  color: #06142B;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+@media (min-width: 480.98px) {
+  .theory__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .theory__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .theory__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .theory {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .search-theory__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .theory {
+    padding: 30px 0;
+  }
+
+  .theory__title {
+    margin-bottom: 20px;
+  }
+
+  .theory__items {
+    margin-bottom: 40px;
+  }
+
+  .theory__item {
+    margin-bottom: 25px;
+  }
+
+  .theory__item:last-child {
+    margin: 0;
+  }
+
+  .search-theory__title {
+    margin-bottom: 10px;
+  }
+
+  .item-theory__icon img {
+    width: 32px;
+    height: 43px;
+  }
+}

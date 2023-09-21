@@ -48,6 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('click', function(e) {
             if (document.querySelector('.menu.active') && !e.target.closest('.menu') && !e.target.closest('.burger')) {
                 document.querySelector('.menu.active').classList.remove('active')
+                lockBody()
             }
 
         })
@@ -288,6 +289,26 @@ window.addEventListener('DOMContentLoaded', function() {
             percentPosition: true,
 
         });
+    }
+
+
+    if (document.querySelector('.profile')) {
+        window.addEventListener('click', function(e) {
+            if (e.target.closest('.profile__phone')) {
+                const el = document.createElement('div')
+
+                el.className = 'profile__item'
+                el.innerHTML = `
+                   <div class="profile__item">
+                        <div class="profile__label">Телефон</div>
+                        <div class="profile__input input-wrapper">
+                            <input class="input" type="text">
+                        </div>
+                    </div>
+                `
+                document.querySelector('.profile__phones').appendChild(el)
+            }
+        })
     }
 
 })

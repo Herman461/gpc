@@ -860,6 +860,50 @@ body.lock {
   position: absolute;
 }
 
+.calendar__day-active.blue {
+  background: #174083 !important;
+}
+
+.calendar__day-active.blue .calendar__day-text {
+  color: #fff !important;
+}
+
+.calendar__day-active.brown {
+  background: #63320F !important;
+}
+
+.calendar__day-active.brown .calendar__day-text {
+  color: #fff !important;
+}
+
+.calendar__day-active.yellow {
+  background: #C59834 !important;
+}
+
+.calendar__day-active.yellow .calendar__day-text {
+  color: #fff !important;
+}
+
+.calendar__day-active.green {
+  background: #0A5043 !important;
+}
+
+.calendar__day-active.green .calendar__day-text {
+  color: #fff !important;
+}
+
+.calendar__day-active.red {
+  background: #8A0B57 !important;
+}
+
+.calendar__day-active.red .calendar__day-text {
+  color: #fff !important;
+}
+
+.color-calendar.basic .calendar__days .calendar__day-selected .calendar__day-box {
+  background: transparent !important;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1192,6 +1236,10 @@ body.lock {
   text-transform: uppercase;
 }
 
+.header__menu {
+  pointer-events: auto;
+}
+
 @media (min-width: 480.98px) {
   .menu__content {
     overflow: auto;
@@ -1271,6 +1319,16 @@ body.lock {
   .menu-banner__close img {
     width: 28px;
     height: 28px;
+  }
+
+  .menu-banner__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
