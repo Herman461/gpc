@@ -380,6 +380,10 @@ body.lock {
   z-index: 3;
 }
 
+.vjs-big-play-button {
+  border: none !important;
+}
+
 .base-video {
   overflow: hidden;
   border-radius: 8px;
@@ -408,6 +412,14 @@ body.lock {
 .base-video video {
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+[data-tab-content] {
+  display: none !important;
+}
+
+[data-tab-content].active {
+  display: block !important;
 }
 
 .title {

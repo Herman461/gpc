@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css?_v=20230921071934">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css?_v=20230921071934">
 
-    <link rel="stylesheet" href="assets/css/pages/chat.css?_v=20230921071934">
+    <link rel="stylesheet" href="assets/css/pages/search.css?_v=20230921071934">
 
-    <title>Чат</title>
+    <title>Поиск</title>
 </head>
 
 <body>
@@ -259,66 +259,46 @@
                 </div>
             </div>
 
-            <div class="chat">
-                <div class="chat__container container">
-                    <div class="chat__title title">Общение с куратором</div>
-                    <div class="chat__block block-chat">
-                        <div class="block-chat__header">
-                            <div class="block-chat__title">ЧАТ С КУРАТОРОМ</div>
-                        </div>
-                        <div class="block-chat__body">
-                            <div class="block-chat__content" ss-container>
-                                <div class="block-chat__items">
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <form action="#" class="block-chat__form form-chat">
-                            <textarea placeholder="Введите сообщение" class="form-chat__textarea"></textarea>
-                            <div class="form-chat__file stroke">
-                                <input type="file">
+            <div class="search">
+                <div class="search__container container">
+                    <div class="search__title">РЕЗУЛЬТАТЫ ПОИСКА:</div>
+                    <form class="search__form form-search">
+                        <div class="form-search__input">
+                            <input placeholder="Поиск" type="text" class="input">
+                            <div class="form-search__close">
                                 <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#attach"></use>
+                                    <use xlink:href="assets/images/icons/icons.svg#close"></use>
                                 </svg>
                             </div>
-                            <button class="form-chat__submit">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#sent"></use>
-                                </svg>
-                            </button>
-                        </form>
+                        </div>
+                        <button class="form-search__button button button_blue">
+                            <span>НАЧАТЬ ПОИСК</span>
+                        </button>
+                    </form>
+                    <div class="search__items">
+                        <div class="search__item item-search">
+                            <div class="item-search__category">Курс</div>
+                            <div class="item-search__title">Наставничество вероники хацкевич</div>
+                        </div>
+                        <div class="search__item item-search">
+                            <div class="item-search__category">Видеолекция</div>
+                            <div class="item-search__title">ПРОДУКТ И ЕГО ПОЗИЦИОНИРОВАНИЕ. ВАША УНИКАЛЬНОСТЬ</div>
+                        </div>
+                        <div class="search__item item-search">
+                            <div class="item-search__category">Прямой эфир</div>
+                            <div class="item-search__title">Европейские законы бизнеса</div>
+                        </div>
+                        <div class="search__item item-search">
+                            <div class="item-search__category">Встреча</div>
+                            <div class="item-search__title">ВСТРЕЧА С АЛЕКСАНДРОМ СОРОКИНЫМ</div>
+                        </div>
                     </div>
                 </div>
 
-            </div>
 
+            </div>
         </main>
+
 
 
     </div>

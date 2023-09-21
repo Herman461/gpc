@@ -389,3 +389,42 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 
+// Табы
+const tabLinks = document.querySelectorAll("[data-tab-title]");
+const tabContent = document.querySelectorAll("[data-tab-content]");
+
+
+if (tabContent.length > 0)  {
+	tabLinks.forEach(function(el) {
+		el.addEventListener("click", openTabs);
+	});
+
+}
+
+function openTabs(el) {
+	el.preventDefault()
+	const btnTarget = el.currentTarget;
+	const title = btnTarget.dataset.tabTitle;
+	const category = btnTarget.dataset.tabCategory
+
+	const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
+	const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
+
+	tabContent.forEach(function(el) {
+		el.classList.remove("active");
+	});
+
+	tabLinks.forEach(function(el) {
+		el.classList.remove("active");
+	});
+
+	const activeContent = document.querySelectorAll(`[data-tab-content="${title}"][data-tab-category="${category}"]`)
+
+	activeContent.forEach(function(el) {
+		el.classList.add('active')
+	})
+	document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
+
+	btnTarget.classList.add("active");
+
+}

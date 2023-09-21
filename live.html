@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="assets/css/style.css?_v=20230921071934">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css?_v=20230921071934">
-
-    <link rel="stylesheet" href="assets/css/pages/chat.css?_v=20230921071934">
-
-    <title>Чат</title>
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230921071934">
+    <link rel="stylesheet" href="assets/css/pages/live.css?_v=20230921071934">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230921071934" />
+    <title>Стратегии бизнеса</title>
 </head>
 
 <body>
@@ -259,71 +258,175 @@
                 </div>
             </div>
 
-            <div class="chat">
-                <div class="chat__container container">
-                    <div class="chat__title title">Общение с куратором</div>
-                    <div class="chat__block block-chat">
-                        <div class="block-chat__header">
-                            <div class="block-chat__title">ЧАТ С КУРАТОРОМ</div>
-                        </div>
-                        <div class="block-chat__body">
-                            <div class="block-chat__content" ss-container>
-                                <div class="block-chat__items">
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
+            <div class="live">
+                <div class="live__container container">
+                    <div class="live__title title">ПРЯМЫЕ ЭФИРЫ
+                        <br>
+                        С ЭКСПЕРТАМИ КЛУБА
+                    </div>
+                    <div class="live__body">
+                        <div class="live__side">
+                            <div class="live__experts swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a data-tab-title="live-1" data-tab-category="video" href="" class="live__expert expert-live active">
+                                            <div class="expert-live__title">Европейские законы бизнеса</div>
+                                            <div class="expert-live__content">
+                                                <div class="expert-live__info">
+                                                    <div class="expert-live__text">Прямой эфир с Дмитрием Сендеровым</div>
+                                                    <div class="expert-live__status">
+                                                        <div class="expert-live__tick stroke">
+                                                            <svg>
+                                                                <use xlink:href="assets/images/icons/icons.svg#tick"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Просмотрен</span>
+                                                    </div>
+                                                </div>
+                                                <div class="expert-live__avatar">
+                                                    <img src="assets/images/live/01.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
+                                    <div class="swiper-slide">
+                                        <a data-tab-title="live-2" data-tab-category="video" href="" class="live__expert expert-live">
+                                            <div class="expert-live__title">ГИБКИЕ НАВЫКИ КАК ОСНОВА УСПЕХА</div>
+                                            <div class="expert-live__content">
+                                                <div class="expert-live__info">
+                                                    <div class="expert-live__text">Прямой эфир с Сергеем Черненко</div>
+                                                    <div class="expert-live__status">
+                                                        <div class="expert-live__tick stroke">
+                                                            <svg>
+                                                                <use xlink:href="assets/images/icons/icons.svg#tick"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Просмотрен</span>
+                                                    </div>
+                                                </div>
+                                                <div class="expert-live__avatar">
+                                                    <img src="assets/images/live/02.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
+                                    <div class="swiper-slide">
+                                        <a data-tab-title="live-3" data-tab-category="video" href="" class="live__expert expert-live">
+                                            <div class="expert-live__title">Криптовалюта. Практическое применение</div>
+                                            <div class="expert-live__content">
+                                                <div class="expert-live__info">
+                                                    <div class="expert-live__text">Прямой эфир с Анной Ермаковой</div>
+                                                    <div class="expert-live__status">
+                                                        <div class="expert-live__tick stroke">
+                                                            <svg>
+                                                                <use xlink:href="assets/images/icons/icons.svg#tick"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Просмотрен</span>
+                                                    </div>
+                                                </div>
+                                                <div class="expert-live__avatar">
+                                                    <img src="assets/images/live/03.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
+                                    <div class="swiper-slide">
+                                        <a data-tab-title="live-4" data-tab-category="video" href="" class="live__expert expert-live">
+                                            <div class="expert-live__title">как психологу и коучу стать известным за 24 часа</div>
+                                            <div class="expert-live__content">
+                                                <div class="expert-live__info">
+                                                    <div class="expert-live__text">Прямой эфир с Романом Масленниковым</div>
+                                                    <div class="expert-live__status">
+                                                        <div class="expert-live__tick stroke">
+                                                            <svg>
+                                                                <use xlink:href="assets/images/icons/icons.svg#tick"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Просмотрен</span>
+                                                    </div>
+                                                </div>
+                                                <div class="expert-live__avatar">
+                                                    <img src="assets/images/live/04.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="live__buttons">
+                                <div class="live__button-prev">
+                                    <img src="assets/images/icons/angle-right-gradient.svg" alt="">
+                                </div>
+                                <div class="live__button-next">
+                                    <img src="assets/images/icons/angle-right-gradient.svg" alt="">
                                 </div>
                             </div>
 
-
                         </div>
-                        <form action="#" class="block-chat__form form-chat">
-                            <textarea placeholder="Введите сообщение" class="form-chat__textarea"></textarea>
-                            <div class="form-chat__file stroke">
-                                <input type="file">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#attach"></use>
-                                </svg>
+
+                        <div class="live__content">
+                            <div data-tab-content="live-1" data-tab-category="video" class="live__item active">
+                                <div class="base-video">
+                                    <video poster="assets/images/live/video-1.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
+                                        <source src="assets/videos/video1.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
                             </div>
-                            <button class="form-chat__submit">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#sent"></use>
-                                </svg>
-                            </button>
-                        </form>
+                            <div data-tab-content="live-2" data-tab-category="video" class="live__item">
+                                <div class="base-video">
+                                    <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
+                                        <source src="assets/videos/video1.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
+                            </div>
+                            <div data-tab-content="live-3" data-tab-category="video" class="live__item">
+                                <div class="base-video">
+                                    <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
+                                        <source src="assets/videos/video1.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
+                            </div>
+                            <div data-tab-content="live-4" data-tab-category="video" class="live__item">
+                                <div class="base-video">
+                                    <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
+                                        <source src="assets/videos/video1.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
-
             </div>
-
         </main>
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js?_v=20230921071934"></script>
-
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230921071934"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230921071934"></script>
     <script src="assets/js/script.js?_v=20230921071934"></script>
     <script src="assets/js/app.js?_v=20230921071934"></script>
 </body>

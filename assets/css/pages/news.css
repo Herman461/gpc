@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+.news {
+  padding: 60px 0;
+}
+
+.news__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: masonry;
+  grid-template-rows: masonry;
+  gap: 40px;
+}
+
+.news__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.news__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.news__items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.item-news {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B));
+  background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%);
+  border: 3px solid transparent;
+  /*Обводка нужной толщины, но прозрачная*/
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+}
+
+.item-news::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 51px;
+  height: 51px;
+}
+
+.item-news__content {
+  padding: 25px 20px 20px 25px;
+}
+
+.item-news__content p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 110%;
+}
+
+.item-news__content p strong {
+  font-weight: 700;
+}
+
+.item-news__content a {
+  color: #174083;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.item-news__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #06142B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.live-item-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  min-height: 230px;
+  padding: 59px 28px 20px;
+  position: relative;
+}
+
+.live-item-news::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background: url("../../images/news/bg.jpg") 0 0/cover no-repeat;
+}
+
+.live-item-news__content {
+  position: relative;
+  z-index: 3;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.live-item-news__title {
+  font-size: 21px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 94.8%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
+  background: linear-gradient(90deg, #B18C52 28.32%, #D3C36D 40.72%, #B18C52 49.66%, #A38044 59.49%, #D3C36D 67.24%, #B18C52 81.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.live-item-news__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.live-item-news__image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 120px;
+  flex: 0 0 120px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A57D24), color-stop(59.17%, #F1DD80), to(#A57D24));
+  background: linear-gradient(180deg, #A57D24 0%, #F1DD80 59.17%, #A57D24 100%);
+  border: 2px solid transparent;
+  /*Обводка нужной толщины, но прозрачная*/
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #fff;
+  box-shadow: inset 0px 0px 0px 100vw #fff;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 50%;
+  position: relative;
+}
+
+.live-item-news__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 117px;
+  height: 117px;
+}
+
+.live-item-news__logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.live-item-news__logo img {
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 767.98px) {
+  .news {
+    padding: 40px 0;
+  }
+
+  .item-news::before {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .news {
+    padding: 30px 0;
+  }
+
+  .item-news::before {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (any-hover: hover) {
+  .item-news__content a:hover {
+    text-decoration: underline;
+  }
+}

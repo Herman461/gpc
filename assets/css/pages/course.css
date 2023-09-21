@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+.intro-course {
+  padding: 20px 0 60px;
+}
+
+.intro-course__image img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-course__content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.intro-course__title {
+  margin-bottom: 28px;
+  text-align: left;
+  max-width: 586px;
+}
+
+.intro-course__text {
+  max-width: 586px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.base-side__item {
+  margin-bottom: 10px;
+}
+
+.base-side__item:last-child {
+  margin: 0;
+}
+
+.item-base-side {
+  display: block;
+  padding: 10px 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B)), -webkit-gradient(linear, left bottom, left top, from(#EFECE2), to(#EFECE2));
+  background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%), linear-gradient(0deg, #EFECE2, #EFECE2);
+  border: 2px solid transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.item-base-side__category {
+  color: #808080;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 8px;
+}
+
+.item-base-side__text {
+  margin-top: 5px;
+  color: #06142B;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.item-base-side__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.item-base-side__status {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.item-base-side__status:last-child {
+  margin: 0;
+}
+
+.item-base-side__status span {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.item-base-side__tick {
+  margin-right: 7px;
+  border: 1px solid transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B));
+  background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%);
+  width: 25px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25px;
+  flex: 0 0 25px;
+  height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.item-base-side__tick svg {
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  color: #C5CCD3;
+}
+
+.content-course__video {
+  margin-bottom: 25px;
+}
+
+.content-course__category {
+  color: #808080;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+
+.content-course__title {
+  color: #06142B;
+  font-family: "AGAvalancheC";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94.8%;
+  /* 17.064px */
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.content-course__block {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B)), -webkit-gradient(linear, left bottom, left top, from(#F2F2EE), to(#F2F2EE));
+  background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%), linear-gradient(0deg, #F2F2EE, #F2F2EE);
+  border: 1px solid transparent;
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  box-shadow: inset 0px 0px 0px 100vw #EFECE2;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  border-radius: 8px;
+  padding: 35px 25px;
+}
+
+.block-content-course__title {
+  margin-bottom: 12px;
+  color: #06142B;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94.8%;
+  /* 17.064px */
+  text-transform: uppercase;
+}
+
+.block-content-course__list {
+  margin-bottom: 20px;
+  padding-left: 18px;
+}
+
+.block-content-course__item {
+  color: #06142B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.8%;
+  margin-bottom: 10px;
+}
+
+.block-content-course__item:last-child {
+  margin: 0;
+}
+
+.block-content-course__button {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 10px;
+  min-height: 55px;
+  max-width: 240px;
+}
+
+@media (min-width: 480.98px) {
+  .intro-course__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 15px;
+  }
+
+  .intro-course__image img {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 635.98px) {
+  .intro-course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .intro-course__top-title {
+    display: none;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .course__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .course__side {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 360px;
+    flex: 0 0 360px;
+  }
+
+  .course__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-left: 40px;
+  }
+
+  .intro-course__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+
+  .intro-course__image img {
+    max-width: 550px;
+  }
+
+  .intro-course__image img:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro-course__image img:first-child {
+    display: none;
+  }
+
+  .intro-course__title {
+    font-size: 30px;
+  }
+
+  .intro-course__title {
+    margin-bottom: 15px;
+  }
+
+  .intro-course__text {
+    font-size: 16px;
+  }
+
+  .intro-course__text br {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .intro-course {
+    padding: 20px 0 40px;
+  }
+}
+
+@media (max-width: 635.98px) {
+  .intro-course {
+    padding: 0px 0 30px;
+  }
+
+  .intro-course__title {
+    display: none;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .intro-course__top-title {
+    margin-bottom: 1px;
+    padding-top: 30px;
+  }
+
+  .intro-course__image {
+    margin-bottom: 5px;
+  }
+
+  .intro-course__image img:first-child {
+    display: block;
+  }
+
+  .intro-course__image img:last-child {
+    display: none;
+  }
+
+  .intro-course__title {
+    display: none;
+  }
+
+  .intro-course__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 635.98px) and (max-width: 991.98px) {
+  .intro-course__image {
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 480.98px) and (max-width: 635.98px) {
+  .intro-course__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (any-hover: hover) {
+  .item-base-side:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 100vw #A3B0C1;
+    box-shadow: inset 0px 0px 0px 100vw #A3B0C1;
+    /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+  }
+}
