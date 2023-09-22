@@ -1240,6 +1240,34 @@ body.lock {
   pointer-events: auto;
 }
 
+.footer {
+  background: #EFECE2;
+}
+
+.footer__container {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: relative;
+}
+
+.footer__logo img {
+  width: 79px;
+  height: 79px;
+}
+
+.footer__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 94.8%;
+}
+
+.footer__social svg {
+  fill: #163D7E;
+  width: 23px;
+  height: 19px;
+}
+
 @media (min-width: 480.98px) {
   .menu__content {
     overflow: auto;
@@ -1252,6 +1280,30 @@ body.lock {
   .banner__search {
     display: none;
   }
+
+  .footer__container {
+    min-height: 150px;
+  }
+
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .footer__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -1261,6 +1313,10 @@ body.lock {
 
   .menu-banner {
     display: none;
+  }
+
+  .footer__container {
+    min-height: 200px;
   }
 }
 
@@ -1512,6 +1568,45 @@ body.lock {
   .banner__title {
     font-size: 26px;
   }
+
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__logo img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .footer__logo {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-bottom: 27px;
+  }
+
+  .footer__link {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 27px;
+  }
+
+  .footer__social {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
 }
 
 @media (min-width: 480.98px) and (max-width: 767.98px) {
@@ -1555,6 +1650,10 @@ body.lock {
   }
 
   .menu__link:hover span {
+    text-decoration: underline;
+  }
+
+  .footer__link:hover {
     text-decoration: underline;
   }
 }

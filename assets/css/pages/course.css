@@ -170,6 +170,19 @@
   color: #C5CCD3;
 }
 
+.item-base-side.active {
+  -webkit-box-shadow: inset 0px 0px 0px 100vw #174083 !important;
+  box-shadow: inset 0px 0px 0px 100vw #174083 !important;
+  /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
+}
+
+.item-base-side.active .item-base-side__category,
+.item-base-side.active .item-base-side__title,
+.item-base-side.active .item-base-side__text,
+.item-base-side.active .item-base-side__status span {
+  color: #F2F2EE !important;
+}
+
 .content-course__video {
   margin-bottom: 25px;
 }

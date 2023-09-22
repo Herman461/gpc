@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="assets/css/style.css?_v=20230922064346">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css?_v=20230922064346">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css?_v=20230922064346">
+    <link rel="stylesheet" href="assets/css/pages/calendar.css?_v=20230922064346">
 
-    <link rel="stylesheet" href="assets/css/pages/chat.css?_v=20230922064346">
-
-    <title>Чат</title>
+    <title>Календарь</title>
 </head>
 
 <body>
@@ -259,83 +258,47 @@
                 </div>
             </div>
 
-            <div class="chat">
-                <div class="chat__container container">
-                    <div class="chat__title title">Общение с куратором</div>
-                    <div class="chat__block block-chat">
-                        <div class="block-chat__header">
-                            <div class="block-chat__title">ЧАТ С КУРАТОРОМ</div>
+            <div class="calendar-page">
+                <div class="calendar-page__container container">
+                    <div class="calendar-page__title title">РАСПИСАНИЕ
+                        <br>
+                        БЛИЖАЙШИХ МЕРОПРИЯТИЙ
+                    </div>
+                    <div class="calendar-page__body">
+                        <div class="calendar-page__item base-calendar">
+                            <div id="calendar-a"></div>
                         </div>
-                        <div class="block-chat__body">
-                            <div class="block-chat__content" ss-container>
-                                <div class="block-chat__items">
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_person">
-                                        <div class="block-chat__who">Куратор: Александра</div>
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                    <div class="block-chat__item block-chat__item_me">
-                                        <div class="block-chat__message"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        <div class="calendar-page__content">
+                            <div class="calendar-page__label">блиЖАЙШИЕ СОБЫТИЯ:</div>
+                            <ul class="calendar-page__events">
+                                <li style="color: #174083;" class="calendar-page__event">5 июня, 12:00 - Наставничество ВХ</li>
+                                <li style="color: #63320F;" class="calendar-page__event">10 июня, 12:00 - Сакральная Сила ВХ</li>
+                                <li style="color: #A57D24;" class="calendar-page__event">15 июня, 12:00 - Открытие новых курсов</li>
+                                <li style="color: #0A5043;" class="calendar-page__event">21 июня, 12:00 - Эфиры с экспертами</li>
+                                <li style="color: #8A0B57;" class="calendar-page__event">31 июня, 12:00 - Оффлайн-встречи</li>
+                            </ul>
                         </div>
-                        <form action="#" class="block-chat__form form-chat">
-                            <textarea placeholder="Введите сообщение" class="form-chat__textarea"></textarea>
-                            <div class="form-chat__file stroke">
-                                <input type="file">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#attach"></use>
-                                </svg>
-                            </div>
-                            <button class="form-chat__submit">
-                                <svg>
-                                    <use xlink:href="assets/images/icons/icons.svg#sent"></use>
-                                </svg>
-                            </button>
-                        </form>
                     </div>
                 </div>
-
             </div>
-            <footer class="footer">
-                <div class="footer__container container">
-                    <a href="" class="footer__logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <a href="" class="footer__link">Перейти на главную</a>
-                    <a href="" class="footer__social">
-                        <svg>
-                            <use xlink:href="assets/images/icons/icons.svg#telegram-filled"></use>
-                        </svg>
-                    </a>
-                </div>
-            </footer>
-
         </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="" class="footer__logo">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <a href="" class="footer__link">Перейти на главную</a>
+                <a href="" class="footer__social">
+                    <svg>
+                        <use xlink:href="assets/images/icons/icons.svg#telegram-filled"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js?_v=20230922064346"></script>
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js?_v=20230922064346"></script>
 
     <script src="assets/js/script.js?_v=20230922064346"></script>
     <script src="assets/js/app.js?_v=20230922064346"></script>

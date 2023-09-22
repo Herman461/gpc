@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="assets/css/plugins/pikaday.css?_v=20230921200106">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230921200106">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css?_v=20230921200106">
-    <link rel="stylesheet" href="assets/css/pages/home.css?_v=20230921200106">
+
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230922064346">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css?_v=20230922064346">
+    <link rel="stylesheet" href="assets/css/pages/home.css?_v=20230922064346">
 
     <title>Главная</title>
 </head>
@@ -643,81 +643,26 @@
             </div>
 
         </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="" class="footer__logo">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <a href="" class="footer__link">Перейти на главную</a>
+                <a href="" class="footer__social">
+                    <svg>
+                        <use xlink:href="assets/images/icons/icons.svg#telegram-filled"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js?_v=20230921200106"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js?_v=20230922064346"></script>
 
-    const days = [5, 10, 15, 21, 29]
-    const baseCalendars = document.querySelectorAll('.base-calendar')
-
-    for (let index = 0; index < baseCalendars.length; index++) {
-        const calendar = baseCalendars[index]
-
-        const cal = new Calendar({
-            id: '#' + calendar.firstElementChild.id,
-            theme: "basic",
-            primaryColor: "#1E1E1E",
-            weekdayType: "short",
-            disableDayClick: true,
-            customWeekdayValues: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
-            startWeekday: '1',
-
-        });
-        const activeDays = calendar.querySelectorAll('.calendar__day-active')
-        console.log(activeDays)
-        for (let j = 0; j < days.length; j++) {
-            const day = days[j]
-
-            switch (j) {
-                case 0:
-                    activeDays[day - 1].classList.add('blue')
-                    break;
-                case 1:
-                    activeDays[day - 1].classList.add('brown')
-                    break;
-                case 2:
-                    activeDays[day - 1].classList.add('yellow')
-                    break;
-                case 3:
-                    activeDays[day - 1].classList.add('green')
-                    break;
-                case 4:
-                    activeDays[day - 1].classList.add('red')
-                    break;
-                default:
-                    activeDays[day - 1].classList.add('blue')
-                    break;
-            }
-
-        }
-
-    }
-
-
-
-
-
-    // const days = document.querySelectorAll('.calendar__day')
-    //
-    // if (days.length > 0) {
-    //     let deleteDayOther = false
-    //     for (let index = 0; index < days.length; index++) {
-    //         const day = days[index]
-    //
-    //         if (day.classList.contains('calendar__day-active') && !deleteDayOther) {
-    //             deleteDayOther = true
-    //         }
-    //
-    //         if (deleteDayOther && day.classList.contains('calendar__day-other')) {
-    //             day.remove()
-    //         }
-    //     }
-    // }
-</script>
-    <script src="assets/js/script.js?_v=20230921200106"></script>
-    <script src="assets/js/app.js?_v=20230921200106"></script>
+    <script src="assets/js/script.js?_v=20230922064346"></script>
+    <script src="assets/js/app.js?_v=20230922064346"></script>
 </body>
 
 </html>

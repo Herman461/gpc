@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/plugins/nouislider.min.css?_v=20230921200106">
-    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230921200106">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230921200106">
+    <link rel="stylesheet" href="assets/css/plugins/nouislider.min.css?_v=20230922064346">
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230922064346">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230922064346">
 
-    <link rel="stylesheet" href="assets/css/pages/course.css?_v=20230921200106">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230921200106" />
+    <link rel="stylesheet" href="assets/css/pages/course.css?_v=20230922064346">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230922064346" />
     <title>Курс</title>
 </head>
 
@@ -289,7 +289,7 @@
                                 <div class="base-side__items swiper-container">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <a href="" class="base-side__item item-base-side active">
+                                            <a data-tab-category="content" data-tab-title="content-1" href="" class="base-side__item item-base-side active">
                                                 <div class="item-base-side__category">Видеолекция #1</div>
                                                 <div class="item-base-side__title">ПРОДУКТ И ЕГО ПОЗИЦИОНИРОВАНИЕ. ВАША УНИКАЛЬНОСТЬ</div>
                                                 <div class="item-base-side__info">
@@ -313,7 +313,7 @@
                                             </a>
                                         </div>
                                         <div class="swiper-slide">
-                                            <a href="" class="base-side__item item-base-side">
+                                            <a data-tab-category="content" data-tab-title="content-2" href="" class="base-side__item item-base-side">
                                                 <div class="item-base-side__category">Видеолекция #2</div>
                                                 <div class="item-base-side__title">Продукт и ниша</div>
                                                 <div class="item-base-side__info">
@@ -356,7 +356,7 @@
                             </div>
                         </aside>
                         <div class="course__content content-course">
-                            <div class="content-course__item">
+                            <div data-tab-category="content" data-tab-content="content-1" class="content-course__item active">
                                 <div class="content-course__video base-video">
                                     <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
                                         <source src="assets/videos/video1.mp4" type="video/mp4" />
@@ -563,7 +563,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="content-course__item">
+                            <div data-tab-category="content" data-tab-content="content-2" class="content-course__item">
                                 <div class="content-course__video base-video">
                                     <video poster="assets/images/preview.jpg" data-setup='{}' class="video-js vjs-16-9" controls preload="metadata">
                                         <source src="assets/videos/video1.mp4" type="video/mp4" />
@@ -776,15 +776,28 @@
 
             </div>
         </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="" class="footer__logo">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <a href="" class="footer__link">Перейти на главную</a>
+                <a href="" class="footer__social">
+                    <svg>
+                        <use xlink:href="assets/images/icons/icons.svg#telegram-filled"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
 
 
     </div>
-    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230921200106"></script>
-    <script src="assets/js/plugins/video.min.js?_v=20230921200106"></script>
-    <script src="assets/js/plugins/wNumb.min.js?_v=20230921200106"></script>
-    <script src="assets/js/plugins/nouislider.min.js?_v=20230921200106"></script>
-    <script src="assets/js/script.js?_v=20230921200106"></script>
-    <script src="assets/js/app.js?_v=20230921200106"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230922064346"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230922064346"></script>
+    <script src="assets/js/plugins/wNumb.min.js?_v=20230922064346"></script>
+    <script src="assets/js/plugins/nouislider.min.js?_v=20230922064346"></script>
+    <script src="assets/js/script.js?_v=20230922064346"></script>
+    <script src="assets/js/app.js?_v=20230922064346"></script>
 
     <script>
     const formCourseSliders = document.querySelectorAll('.slider-form-course__item')
