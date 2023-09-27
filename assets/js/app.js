@@ -323,7 +323,7 @@ window.addEventListener('DOMContentLoaded', function() {
             primaryColor: "#1E1E1E",
             weekdayType: "short",
             disableDayClick: true,
-            customWeekdayValues: ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'],
+            customWeekdayValues: ['СР', 'ПН', 'СБ', 'ЧТ', 'ВТ', 'ВС', 'ПТ'],
             startWeekday: '1',
 
         });

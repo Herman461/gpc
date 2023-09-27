@@ -488,6 +488,10 @@
     right: 0px;
     z-index: 4;
   }
+
+  .item-base-side__text {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 635.98px) {
