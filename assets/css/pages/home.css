@@ -158,6 +158,7 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 0 114px;
   flex: 0 0 114px;
+  height: 114px;
   border: 2px solid transparent;
   /*Обводка нужной толщины, но прозрачная*/
   background: -webkit-gradient(linear, left top, left bottom, from(#A57D24), color-stop(59.17%, #F1DD80), to(#A57D24));
@@ -165,7 +166,7 @@
   -webkit-box-shadow: inset 0px 0px 0px 100vw #fff;
   box-shadow: inset 0px 0px 0px 100vw #fff;
   /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
-  border-radius: 50px;
+  border-radius: 50%;
   overflow: hidden;
   position: relative;
   z-index: 3;
@@ -265,7 +266,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B)), -webkit-gradient(linear, left bottom, left top, from(#EFECE2), to(#EFECE2));
   background: linear-gradient(180deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%), linear-gradient(0deg, #EFECE2, #EFECE2);
   position: relative;
-  padding: 23px 20px 23px 37px;
+  padding: 23px 20px 23px 20px;
 }
 
 .item-news-page__body::before {
@@ -480,12 +481,6 @@
   padding: 60px 0 18px;
 }
 
-@media (min-width: 480.98px) {
-  .welcome-page__title br {
-    display: none;
-  }
-}
-
 @media (min-width: 650.98px) {
   .page-cards {
     display: -webkit-box;
@@ -559,6 +554,16 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 360px;
     flex: 0 0 360px;
+  }
+
+  body {
+    overflow-x: visible !important;
+  }
+
+  .side-page__body {
+    position: sticky;
+    top: 20px;
+    left: 0;
   }
 }
 
@@ -667,6 +672,9 @@
 
   .welcome-page__title {
     margin-bottom: 30px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .welcome-page__subtitle {
@@ -702,6 +710,10 @@
 
   .base-cards {
     padding: 40px 0;
+  }
+
+  .item-page-cards__image_small {
+    height: 84px;
   }
 
   .item-page-cards__image_small img {
@@ -797,6 +809,10 @@
 
   .item-page-cards__text {
     font-size: 10px;
+  }
+
+  .item-page-cards__image_small {
+    height: 100px;
   }
 
   .item-page-cards__image_small img {

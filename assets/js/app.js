@@ -188,12 +188,12 @@ window.addEventListener('DOMContentLoaded', function() {
     // }
 
     // window.addEventListener('scroll', fixHeader)
-
-    if (document.querySelector('.actions-navigation')) {
-        document.querySelector('.block-navigation__content .ss-wrapper').appendChild(document.querySelector('.actions-navigation'))
-
-
-    }
+    //
+    // if (document.querySelector('.actions-navigation')) {
+    //     document.querySelector('.block-navigation__content .ss-wrapper').appendChild(document.querySelector('.actions-navigation'))
+    //
+    //
+    // }
 
     if (document.querySelector('.actions-navigation__top')) {
         document.querySelector('.actions-navigation__top').addEventListener('click', function() {
@@ -355,5 +355,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
         }
 
+    }
+
+    if (document.querySelector('.base-datepicker')) {
+        const picker = new Pikaday({ field: document.querySelector('.base-datepicker') });
     }
 })

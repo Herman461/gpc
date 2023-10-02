@@ -108,6 +108,7 @@
 .content-navigation {
   height: 580px;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding-right: 30px;
 }
 
@@ -115,7 +116,6 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 155px;
 }
 
 .content-navigation .ss-scroll {
@@ -149,11 +149,7 @@
 }
 
 .actions-navigation {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 135px;
-  width: calc(100% + 21px);
   background: #F2F2EE;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,10 +279,6 @@
     height: 650px;
   }
 
-  .content-navigation .ss-content {
-    padding-bottom: 205px;
-  }
-
   .content-navigation img {
     width: 205px;
     height: 105px;
@@ -334,10 +326,6 @@
 
   .content-navigation {
     height: 580px;
-  }
-
-  .content-navigation .ss-content {
-    padding-bottom: 155px;
   }
 
   .content-navigation img {

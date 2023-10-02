@@ -165,7 +165,7 @@
   cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 70px;
+  right: 52px;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   width: 40px;
@@ -194,7 +194,7 @@
   cursor: pointer;
   position: absolute;
   top: calc(50% + 2px);
-  right: 30px;
+  right: 12px;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   width: 40px;
