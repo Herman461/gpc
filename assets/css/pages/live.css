@@ -146,6 +146,9 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
+  position: relative;
+  left: -0.9px;
+  top: 0.5px;
 }
 
 .expert-live.active {
@@ -261,6 +264,10 @@
 @media (max-width: 480.98px) {
   .live {
     padding: 30px 0;
+  }
+
+  .live__side {
+    padding: 0;
   }
 
   .live__button-prev {

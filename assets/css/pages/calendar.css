@@ -2,6 +2,10 @@
   padding: 60px 0;
 }
 
+.calendar-page__container {
+  max-width: 1160px;
+}
+
 .calendar-page__title {
   margin-bottom: 73px;
 }

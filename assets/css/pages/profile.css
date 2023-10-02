@@ -231,6 +231,11 @@
   background: #F2F2EE;
 }
 
+.socials-profile__icon_vk img {
+  width: 27px;
+  height: 27px;
+}
+
 @media (min-width: 480.98px) {
   .socials-profile {
     display: -webkit-box;

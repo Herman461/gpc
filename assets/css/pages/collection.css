@@ -82,7 +82,7 @@
 
 .image-intro-collection__item {
   height: 307px;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   /*Обводка нужной толщины, но прозрачная*/
   background: -webkit-gradient(linear, left bottom, left top, from(#C4AF7E), color-stop(45.1%, #E9DB99), to(#AA894B)), -webkit-gradient(linear, left bottom, left top, from(#EFECE2), to(#EFECE2));
   background: linear-gradient(0deg, #C4AF7E 0%, #E9DB99 45.1%, #AA894B 100%), linear-gradient(0deg, #EFECE2, #EFECE2);
@@ -98,6 +98,14 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 110%;
+}
+
+.content-collection__video {
+  margin-bottom: 25px;
+}
+
+.content-collection__video .vjs-big-play-button {
+  top: 59% !important;
 }
 
 .content-collection__label {
@@ -167,7 +175,7 @@
   box-shadow: inset 0px 0px 0px 100vw #F2F2EE;
   /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
   border-radius: 8px;
-  padding: 35px 25px;
+  padding: 25px;
 }
 
 .block-content-collection__form {
@@ -380,6 +388,16 @@
     height: 183px;
     width: 183px;
     margin: 0 auto;
+    border: 2px solid transparent;
+    /*Обводка нужной толщины, но прозрачная*/
+  }
+
+  .content-collection__block {
+    padding: 20px 25px;
+  }
+
+  .collection__body {
+    padding-bottom: 30px !important;
   }
 
   .collection__intro_bottom .intro-collection__content > p {
@@ -604,5 +622,11 @@
     flex: 0 0 180px;
     width: 180px;
     margin-right: 17px;
+  }
+}
+
+@media (min-width: 480.98px) and (max-width: 991.98px) {
+  .block-content-collection__title {
+    font-size: 18px !important;
   }
 }

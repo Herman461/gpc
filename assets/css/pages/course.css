@@ -187,6 +187,10 @@
   margin-bottom: 25px;
 }
 
+.content-course__video .vjs-big-play-button {
+  top: 59% !important;
+}
+
 .content-course__category {
   color: #808080;
   font-size: 14px;
@@ -216,7 +220,7 @@
   box-shadow: inset 0px 0px 0px 100vw #EFECE2;
   /*Тень направленная внутрь контейнера, перекрывает ненужный фон и оставляет только рамку*/
   border-radius: 8px;
-  padding: 35px 25px;
+  padding: 25px;
 }
 
 .block-content-course__title {
@@ -494,6 +498,12 @@
   }
 }
 
+@media (min-width: 600.98px) {
+  .form-course__input input {
+    height: 50px;
+  }
+}
+
 @media (min-width: 635.98px) {
   .intro-course {
     display: -webkit-box;
@@ -630,7 +640,7 @@
 
 @media (max-width: 767.98px) {
   .intro-course {
-    padding: 20px 0 40px;
+    padding: 40px 0 40px;
   }
 
   .base-side__more .button {
@@ -653,6 +663,10 @@
 }
 
 @media (max-width: 480.98px) {
+  .form-course__input_small .input {
+    height: 40px !important;
+  }
+
   .intro-course__top-title {
     margin-bottom: 1px;
     padding-top: 30px;
