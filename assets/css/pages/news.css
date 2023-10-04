@@ -68,7 +68,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
@@ -145,7 +145,7 @@
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .image-item-news__logo {
@@ -211,7 +211,7 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 94.8%;
+  line-height: 1;
   background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
   background: linear-gradient(90deg, #B18C52 28.32%, #D3C36D 40.72%, #B18C52 49.66%, #A38044 59.49%, #D3C36D 67.24%, #B18C52 81.14%);
   background-clip: text;
@@ -318,7 +318,7 @@
   -webkit-text-fill-color: transparent;
   font-size: 30px;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 28.44px */
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -389,6 +389,10 @@
     padding: 40px 28px 20px;
   }
 
+  .live-item-news__title {
+    margin-bottom: 30px;
+  }
+
   .info-item-news__title {
     font-size: 23px;
     margin-bottom: 8px;
@@ -396,6 +400,20 @@
 
   .info-item-news__text {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 800.98px) {
+  .image-item-news__item {
+    height: 185px;
+  }
+
+  .live-item-news {
+    min-height: 189px;
+  }
+
+  .info-item-news {
+    min-height: 189px;
   }
 }
 
@@ -449,10 +467,6 @@
     font-size: 12px;
   }
 
-  .image-item-news__item {
-    height: 168px;
-  }
-
   .image-item-news__logo img {
     width: 33px;
     height: 33px;
@@ -468,7 +482,7 @@
   }
 
   .info-item-news {
-    min-height: 168px;
+    min-height: 189px;
   }
 }
 
@@ -501,8 +515,16 @@
   }
 
   .live-item-news {
+    min-height: 185px;
+  }
+
+  .live-item-news {
     min-height: 176px;
     padding: 37px 15px 15px;
+  }
+
+  .info-item-news {
+    min-height: 185px;
   }
 
   .info-item-news {

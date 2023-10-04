@@ -59,7 +59,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
 }
 
 .form-search__input input::-webkit-input-placeholder {
@@ -139,7 +139,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 15.168px */
   text-transform: uppercase;
 }

@@ -504,7 +504,7 @@ body.lock {
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 87.8%;
+  line-height: 1;
   /* 43.9px */
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
@@ -546,7 +546,7 @@ body.lock {
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 87.8%;
+  line-height: 1;
   /* 43.9px */
   text-transform: uppercase;
 }
@@ -810,7 +810,7 @@ body.lock {
   font-size: 22px !important;
   font-style: normal;
   font-weight: 700 !important;
-  line-height: 94.8%;
+  line-height: 1;
   /* 20.856px */
   text-transform: uppercase;
   color: #1E1E1E !important;
@@ -841,7 +841,7 @@ body.lock {
   font-size: 22px !important;
   font-style: normal;
   font-weight: 700 !important;
-  line-height: 94.8%;
+  line-height: 1;
   /* 20.856px */
   text-transform: uppercase !important;
   border: 1px solid #C6AD62 !important;
@@ -864,10 +864,10 @@ body.lock {
 }
 
 .banner__more {
-  z-index: 4;
+  z-index: 999;
   top: 8px;
   right: 0;
-  position: absolute;
+  position: fixed;
 }
 
 .calendar__day-active.blue {
@@ -912,6 +912,42 @@ body.lock {
 
 .color-calendar.basic .calendar__days .calendar__day-selected .calendar__day-box {
   background: transparent !important;
+}
+
+.base-video {
+  position: relative;
+}
+
+.base-video__content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.base-video__title {
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28.32%, #B18C52), color-stop(40.72%, #D3C36D), color-stop(49.66%, #B18C52), color-stop(59.49%, #A38044), color-stop(67.24%, #D3C36D), color-stop(81.14%, #B18C52));
+  background: linear-gradient(90deg, #B18C52 28.32%, #D3C36D 40.72%, #B18C52 49.66%, #A38044 59.49%, #D3C36D 67.24%, #B18C52 81.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.base-video__date {
+  color: #06142B;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .header {
@@ -1069,7 +1105,7 @@ body.lock {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
   padding-left: 27px;
   display: inline-block;
   background: url("../images/icons/diamond.svg") 0 0 no-repeat;
@@ -1125,7 +1161,7 @@ body.lock {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
 }
 
 .search-header {
@@ -1249,7 +1285,7 @@ body.lock {
   font-size: 70px;
   font-style: normal;
   font-weight: 700;
-  line-height: 87.8%;
+  line-height: 1;
   /* 61.46px */
   text-transform: uppercase;
 }
@@ -1277,7 +1313,7 @@ body.lock {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
 }
 
 .footer__social svg {
@@ -1335,6 +1371,16 @@ body.lock {
 
   .footer__container {
     min-height: 200px;
+  }
+}
+
+@media (max-width: 1870px) {
+  .base-video__title {
+    font-size: calc(10px + 20 * ((100vw - 320px) / 1550));
+  }
+
+  .base-video__date {
+    font-size: calc(8px + 11 * ((100vw - 320px) / 1550));
   }
 }
 
@@ -1637,6 +1683,12 @@ body.lock {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1100.98px) {
+  .base-video__content {
+    top: 38%;
   }
 }
 

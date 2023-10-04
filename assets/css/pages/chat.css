@@ -46,7 +46,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -68,7 +68,7 @@
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
   margin-bottom: 8px;
 }
 
@@ -108,7 +108,7 @@
   font-weight: 500;
   display: block;
   width: 100%;
-  line-height: 94.8%;
+  line-height: 1;
 }
 
 .form-chat__textarea:focus::-webkit-input-placeholder {
@@ -229,6 +229,10 @@
 @media (max-width: 991.98px) {
   .chat {
     padding: 60px 0 40px;
+  }
+
+  .block-chat .ss-scroll {
+    opacity: 1 !important;
   }
 }
 

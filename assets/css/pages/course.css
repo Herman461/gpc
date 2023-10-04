@@ -92,7 +92,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   font-family: "AGAvalancheC";
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -206,7 +206,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 17.064px */
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -229,7 +229,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 17.064px */
   text-transform: uppercase;
 }
@@ -244,7 +244,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 94.8%;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
@@ -582,6 +582,11 @@
     flex-direction: column;
     -webkit-transform: none !important;
     transform: none !important;
+  }
+
+  .form-course__input input {
+    height: 70px;
+    font-size: 18px;
   }
 }
 

@@ -51,7 +51,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 20.856px */
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -194,7 +194,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 20.856px */
   text-transform: uppercase;
 }
@@ -229,6 +229,29 @@
 .avatar-profile__body {
   height: 100%;
   background: #F2F2EE;
+}
+
+.profile__input {
+  position: relative;
+}
+
+.profile__input.base-datepicker {
+  padding-right: 55px;
+  cursor: pointer;
+}
+
+.profile__icon {
+  pointer-events: none;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.profile__icon svg {
+  width: 35px;
+  height: 35px;
 }
 
 .socials-profile__icon_vk img {
@@ -316,6 +339,19 @@
   .action-profile__text {
     max-width: 260px;
     font-size: 13px;
+  }
+
+  .profile__input.base-datepicker {
+    padding-right: 45px;
+  }
+
+  .profile__icon {
+    right: 15px;
+  }
+
+  .profile__icon svg {
+    width: 23px;
+    height: 23px;
   }
 }
 

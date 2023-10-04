@@ -54,7 +54,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 11.376px */
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -193,11 +193,12 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 11.376px */
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  width: calc(50% - 16px);
 }
 
 .actions-navigation__button:last-child {

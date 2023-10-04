@@ -63,7 +63,7 @@
   font-size: 29px;
   font-style: normal;
   font-weight: 700;
-  line-height: 87.8%;
+  line-height: 1;
   /* 25.462px */
   text-transform: uppercase;
 }
@@ -83,7 +83,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94.8%;
+  line-height: 1;
   /* 20.856px */
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -95,12 +95,12 @@
 
 .list-strategy-video__item {
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
 }
 
 .list-strategy-video__subtitle {
   font-weight: 500;
-  line-height: 94.8%;
+  line-height: 1;
   text-transform: uppercase;
 }
 
