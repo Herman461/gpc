@@ -559,10 +559,6 @@ body.lock {
   color: #1E1E1E !important;
 }
 
-.base-calendar .calendar__arrow {
-  display: none !important;
-}
-
 .base-calendar .color-calendar {
   max-width: 550px;
   width: 100% !important;
@@ -823,7 +819,6 @@ body.lock {
 }
 
 .base-calendar .calendar__header {
-  pointer-events: none;
   padding-bottom: 18px !important;
 }
 
@@ -948,6 +943,23 @@ body.lock {
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+}
+
+.color-calendar.basic .calendar__arrow-inner::before {
+  width: 0.8em !important;
+  height: 0.8em !important;
+}
+
+.color-calendar .calendar__arrow {
+  width: auto !important;
+}
+
+.calendar-page .calendar__arrow {
+  display: none !important;
+}
+
+.calendar-page .calendar__header {
+  pointer-events: none !important;
 }
 
 .header {

@@ -327,6 +327,7 @@ window.addEventListener('DOMContentLoaded', function() {
             startWeekday: '1',
 
         });
+
         const activeDays = calendar.querySelectorAll('.calendar__day-active')
 
         for (let j = 0; j < days.length; j++) {
