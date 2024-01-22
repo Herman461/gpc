@@ -954,14 +954,6 @@ body.lock {
   width: auto !important;
 }
 
-.calendar-page .calendar__arrow {
-  display: none !important;
-}
-
-.calendar-page .calendar__header {
-  pointer-events: none !important;
-}
-
 .header {
   position: absolute;
   top: 0;
