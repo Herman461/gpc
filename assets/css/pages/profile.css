@@ -97,11 +97,6 @@
   margin-bottom: 35px;
 }
 
-.profile__submit .button {
-  max-width: 300px;
-  min-height: 80px;
-}
-
 .profile__action {
   margin-bottom: 20px;
 }
@@ -395,7 +390,7 @@
 
   .action-profile__button {
     max-width: 100%;
-    min-height: 70px;
+    min-height: 55px;
   }
 
   .action-profile__text {

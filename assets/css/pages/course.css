@@ -42,8 +42,8 @@
 }
 
 .base-side__more .button {
-  max-width: 300px;
-  min-height: 80px;
+  max-width: 280px;
+  min-height: 55px;
 }
 
 .base-side__main {
@@ -319,7 +319,7 @@
 }
 
 .form-course__submit .button {
-  max-width: 300px;
+  max-width: 260px;
 }
 
 .form-course textarea {
@@ -648,10 +648,6 @@
     padding: 40px 0 40px;
   }
 
-  .base-side__more .button {
-    min-height: 75px;
-  }
-
   .form-course {
     padding: 50px 0 40px;
   }
@@ -699,10 +695,6 @@
 
   .base-side__more .button {
     max-width: 260px;
-  }
-
-  .base-side__more .button {
-    min-height: 65px;
   }
 
   .base-side__main {
@@ -761,7 +753,7 @@
 
   .form-course__submit .button {
     max-width: 260px;
-    min-height: 65px;
+    min-height: 55px;
     font-size: 14px;
   }
 
